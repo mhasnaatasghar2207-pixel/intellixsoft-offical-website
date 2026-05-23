@@ -166,20 +166,30 @@ const Navbar = () => {
             Services
           </NavLink>
 
+
           {/* MOBILE COURSES DROPDOWN */}
           <div>
-            <button
-              onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
-              className={`flex items-center justify-between w-full text-left text-[15px] font-semibold ${isScrolled ? "text-black" : "text-white"
-                }`}
-            >
-              Courses
-              <IoIosArrowDown
-                className={`transition-transform duration-300 ${mobileCoursesOpen ? "rotate-180" : ""
-                  }`}
-              />
-            </button>
+            <div className="flex items-center justify-between">
+              <NavLink
+                onClick={closeMenu}
+                to="/courses"
+                className={linkStyle}
+              >
+                Courses
+              </NavLink>
 
+              <button
+                type="button"
+                onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
+                className={`${isScrolled ? "text-black" : "text-white"
+                  }`}
+              >
+                <IoIosArrowDown
+                  className={`transition-transform duration-300 ${mobileCoursesOpen ? "rotate-180" : ""
+                    }`}
+                />
+              </button>
+            </div>
             {mobileCoursesOpen && (
               <div className="mt-2 ml-3 flex flex-col gap-2">
                 <NavLink onClick={closeMenu} to="/courses/web-app-development" className={linkStyle}>
