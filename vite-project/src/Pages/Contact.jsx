@@ -95,7 +95,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-[17px] mb-1">Phone</h4>
                       <p className="text-white/75 text-[14px]">
-                        +92 314 616 1319
+                        03063910240
                       </p>
                     </div>
                   </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-[17px] mb-1">Email</h4>
                       <p className="text-white/75 text-[14px]">
-                        officialIntellixSoft@gmail.com
+                        Intellixsoft.inc@gmail.com
                       </p>
                     </div>
                   </div>
